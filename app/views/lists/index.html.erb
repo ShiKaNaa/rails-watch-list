@@ -1,9 +1,25 @@
-<h1>All my lists</h1>
+<div class="nav-bar">
+  <span>Pop corn</span>
+  <span>
+    <span><a href="#h3">My lists</a></span>
+    <span><%= link_to "new list", new_list_path %></span>
+  </span>
+</div>
 
-<ul>
-  <% @lists.each do |list| %>
-  <li><%= link_to list.name, list_path(list.id) %></li>
-  <% end %>
-</ul>
+<div class="hero-banner">
+  <div class="container container-center-inline">
+    <h1>Be original and download your movies !</h1>
+    <p>Classic</p>
+    <%# <a class="btn btn-flat" href="#">Apply now</a> %>
+  </div>
+</div>
 
-<%= link_to "new list", new_list_path %>
+
+<div class="container">
+  <h3>All my lists</h3>
+  <ul>
+    <% @lists.each do |list| %>
+    <li><%= link_to list.name, list_path(list.id) %></li>
+    <% end %>
+  </ul>
+</div>

@@ -3,3 +3,26 @@
 @import "avatar";
 @import "form_legend_clear";
 @import "navbar";
+
+.nav-bar {
+  margin: 16px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.hero-banner {
+  background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url('/home/shika/code/ShiKaNaa/rails-watch-list/app/assets/images/jeremy-yap-J39X2xX_8CQ-unsplash.jpg');
+  background-size: cover;
+  background-position: center;
+  padding: 150px 0;
+
+  .container-center-inline {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    h1, p {
+      text-align: center;
+    }
+  }
+}
