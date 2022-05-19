@@ -1,0 +1,9 @@
+<h1><%= @list.name %></h1>
+
+<ul>
+  <% @list.bookmarks.each do |bookmark| %>
+  <li><%= bookmark.comment %> - <%= link_to "delete", bookmark_path(bookmark.id), method: :delete, data: { confirm: 'Are you sure?' }%></li>
+  <% end %>
+</ul>
+
+<p>Create a <%= link_to "bookmark", new_list_bookmark_path(@list.id) %></p>
