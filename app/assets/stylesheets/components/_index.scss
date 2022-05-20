@@ -11,7 +11,8 @@
 }
 
 .hero-banner {
-  background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url('/home/shika/code/ShiKaNaa/rails-watch-list/app/assets/images/jeremy-yap-J39X2xX_8CQ-unsplash.jpg');
+  color: white;
+  background-image: linear-gradient(rgba(69, 69, 69, 0.4),rgba(69, 69, 69, 0.4)), url("https://images.unsplash.com/photo-1478720568477-152d9b164e26?crop=entropy&cs=tinysrgb&fm=jpg&ixlib=rb-1.2.1&q=80&raw_url=true&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170");
   background-size: cover;
   background-position: center;
   padding: 150px 0;
