@@ -1,10 +1,11 @@
-<h1><%= @list.name %></h1>
+<div class="hero-banner">
+  <div class="container container-center-inline">
+    <h1><%= @list.name %></h1>
+    <p>Classic</p>
+  </div>
+</div>
 
-<% if @list.photo.attached? %>
-  <%= cl_image_tag @list.photo.key, height: 300, width: 400, crop: :fill %>
-<% else %>
-  <%= image_tag "jeremy-yap-J39X2xX_8CQ-unsplash.jpg", alt: "default photo", height: 300, width: 400, crop: :fill %>
-<% end %>
+
 
 
 <ul>
