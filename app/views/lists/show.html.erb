@@ -1,10 +1,18 @@
 <h1><%= @list.name %></h1>
 
+<% if @list.photo.attached? %>
+  <%= cl_image_tag @list.photo.key, height: 300, width: 400, crop: :fill %>
+<% else %>
+  <%= image_tag "jeremy-yap-J39X2xX_8CQ-unsplash", alt: "default photo", height: 300, width: 400, crop: :fill %>
+<% end %>
+
+
 <ul>
   <% @list.bookmarks.each do |bookmark| %>
   <li><%= bookmark.movie.title %> / <%= bookmark.comment %> - <%= link_to "delete", bookmark_path(bookmark.id), method: :delete, data: { confirm: 'Are you sure?' }%></li>
   <% end %>
 </ul>
+
 
 <p>Create a <%= link_to "bookmark", new_list_bookmark_path(@list.id) %></p>
 <p>Go back to the <%= link_to "lists", lists_path %></p>
